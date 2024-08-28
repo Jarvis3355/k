@@ -1,0 +1,50 @@
+1. practical
+
+Label1.Text = "your username is : " + TextBox1.Text;
+Label2.Text = " your password is : " + TextBox2.Text;
+
+2. practical
+
+Response.Write("your ip address: " + Request.UserHostAddress + "<br>");
+Response.Write("your computer name :" + System.Net.Dns.GetHostEntry(Request.UserHostAddress).HostName + "<br>");
+Response.Write("Current url :" + Request.Url.AbsoluteUri);
+
+3rd program
+
+        if (DropDownList1.SelectedValue == null)
+        {
+            
+        }
+        else
+        {
+            Label1.Text = "your class is " + DropDownList1.SelectedValue;
+        }
+
+        if (CheckBox1.Checked)
+        {
+            Label2.Text = CheckBox1.Text;
+            if (CheckBox2.Checked)
+            {
+                Label2.Text = CheckBox1.Text + " " + CheckBox2.Text;
+                if (CheckBox3.Checked)
+                {
+                    Label2.Text = CheckBox1.Text + " " + CheckBox2.Text + " " + CheckBox3.Text;
+                }
+            }
+        }
+        
+         
+
+        if(RadioButton1.Checked){
+            Label3.Text = RadioButton1.Text + "";
+        }
+        if (RadioButton2.Checked)
+        {
+            Label3.Text = RadioButton2.Text + "";
+        }
+
+4.2 practical
+
+Label1.Text = "you are selected : " + Calendar1.SelectedDate.ToString("D");
+
+
